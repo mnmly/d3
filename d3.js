@@ -1,9 +1,4 @@
 
-/**
- * Expose `d3`.
- */
-module.exports = d3;
-
 (function() {
   var d3_format_decimalPoint = ".", d3_format_thousandsSeparator = ",", d3_format_grouping = [ 3, 3 ];
   if (!Date.now) Date.now = function() {
@@ -20,6 +15,13 @@ module.exports = d3;
   d3 = {
     version: "3.0.1"
   };
+
+  /**
+   * Expose `d3`.
+   */
+  module.exports = d3;
+
+
   var π = Math.PI, ε = 1e-6, d3_radians = π / 180, d3_degrees = 180 / π;
   function d3_target(d) {
     return d.target;
