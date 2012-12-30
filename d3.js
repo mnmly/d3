@@ -1,3 +1,9 @@
+
+/**
+ * Expose `d3`.
+ */
+module.exports = d3;
+
 (function() {
   var d3_format_decimalPoint = ".", d3_format_thousandsSeparator = ",", d3_format_grouping = [ 3, 3 ];
   if (!Date.now) Date.now = function() {
